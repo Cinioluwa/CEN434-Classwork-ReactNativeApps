@@ -21,7 +21,7 @@ const NewsAggregator = () => {
     const fetchNews = async () => {
       try {
         // Replace 'YOUR_API_KEY' with your actual NewsAPI key
-        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=135a3112d6b1412d922d31deab77fea62');
+        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=XXXXXXXXXXXXXX'); <- Removed the API key lol
         const data = await response.json();
         if (data.status === 'ok') {
           setNews(data.articles);
